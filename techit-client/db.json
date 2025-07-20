@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Mor",
+      "email": "mora@gmail.com",
+      "password": "12345678",
+      "isAdmin": true
+    },
+    {
+      "id": "2",
+      "name": "yossi",
+      "email": "yossi@gmail.com",
+      "password": "12345678",
+      "isAdmin": false
+    },
+    {
+      "id": "bcc6",
+      "name": "Margol",
+      "email": "margol@gmail.com",
+      "password": "12345678",
+      "isAdmin": false
+    }
+  ],
+  "products": [
+    {
+      "name": "Microsoft Earphones",
+      "price": 200,
+      "category": "Earphones & Headphones",
+      "description": "The Microsoft new earphones with high quality",
+      "image": "https://rukminim1.flixcart.com/image/416/416/k0flmkw0/headphone/u/2/h/queer-original-nokia-microsoft-wh-108-wired-headset-black-original-imafk8c6pjy2rhax.jpeg?q=70",
+      "id": "1",
+      "available": true
+    },
+    {
+      "name": "Microsoft Headphones",
+      "price": 200,
+      "category": "Earphones & Headphones",
+      "description": "The Microsoft new earphones with high quality",
+      "image": "https://m.media-amazon.com/images/I/712lRY36XYS.jpg",
+      "id": "2",
+      "available": true
+    },
+    {
+      "name": "Asus Vivobook",
+      "price": 3600,
+      "category": "Laptops",
+      "description": "Wondeful laptops",
+      "image": "https://www.asus.com/media/Odin/Websites/global/Series/12.png",
+      "id": "3",
+      "available": false
+    },
+    {
+      "id": "af6a",
+      "name": "Apple",
+      "price": 15,
+      "category": "Fantasy",
+      "description": "prepare the mmd",
+      "image": "https://www.google.com/search?q=harry+potter+book&tbm=isch&ved=2ahUKEwi2gsuO4aX6AhXrhM4BHQq7DSUQ2-cCegQIABAA&oq=harry+potter+book&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgQIABAeMgQIABAeOgQIIxAnOgQIABBDUPUBWOAJYPwKaABwAHgAgAGDAYgBhAaSAQMwLjaYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=cPIqY7aKFeuJur4Piva2qAI&bih=951&biw=962#imgrc=-7lakjotHtiE3M",
+      "available": false
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": "1",
+      "products": [
+        "1",
+        "2"
+      ],
+      "active": true
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "products": [],
+      "active": true
+    },
+    {
+      "id": "8256",
+      "userId": "bcc6",
+      "products": [],
+      "active": true
+    }
+  ]
+}

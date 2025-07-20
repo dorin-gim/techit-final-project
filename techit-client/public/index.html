@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <!-- Meta Tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17a2b8" />
+  <meta name="description"
+    content="TechIt - חנות טכנולוגיה מתקדמת עם מוצרים איכותיים במחירים תחרותיים. לפטופים, אוזניות, טלפונים חכמים ועוד." />
+  <meta name="keywords" content="טכנולוגיה, לפטופים, אוזניות, טלפונים, מחשבים, קניות אונליין, TechIt" />
+  <meta name="author" content="TechIt Team" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techit.co.il/" />
+  <meta property="og:title" content="TechIt - חנות הטכנולוגיה שלך" />
+  <meta property="og:description" content="חנות טכנולוגיה מתקדמת עם מוצרים איכותיים במחירים תחרותיים" />
+  <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://techit.co.il/" />
+  <meta property="twitter:title" content="TechIt - חנות הטכנולוגיה שלך" />
+  <meta property="twitter:description" content="חנות טכנולוגיה מתקדמת עם מוצרים איכותיים במחירים תחרותיים" />
+  <meta property="twitter:image" content="%PUBLIC_URL%/logo512.png" />
+
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- App Title - Updated with App Name -->
+  <title>TechIt - חנות הטכנולוגיה המתקדמת שלך | לפטופים, אוזניות וטלפונים</title>
+</head>
+
+<body>
+  <!-- Screen Reader Support -->
+  <noscript>
+    <div style="text-align: center; padding: 20px; background: #f8f9fa; border: 1px solid #dee2e6;">
+      <h1>TechIt</h1>
+      <p>עליך להפעיל JavaScript כדי להשתמש באפליקציה זו.</p>
+      <p>אנא הפעל JavaScript בדפדפן שלך ורענן את הדף.</p>
+    </div>
+  </noscript>
+
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="skip-link sr-only sr-only-focusable">
+    דלג לתוכן הראשי
+  </a>
+
+  <!-- Main App Container -->
+  <div id="root" role="main" aria-label="TechIt - אפליקציית חנות טכנולוגיה"></div>
+
+  <!-- Hidden element for main content anchor -->
+  <div id="main-content" style="position: absolute; top: -1px; left: -1px; width: 1px; height: 1px;"></div>
+
+  <!-- Accessibility CSS -->
+  <style>
+    /* Skip Link Styles */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #17a2b8;
+      color: white;
+      padding: 8px;
+      z-index: 1000;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .skip-link:focus {
+      top: 6px;
+    }
+
+    /* Screen Reader Only Content */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      padding: 0.25rem 0.5rem !important;
+      margin: 0 !important;
+      overflow: visible !important;
+      clip: auto !important;
+      white-space: normal !important;
+    }
+
+    /* High Contrast Mode Support */
+    @media (prefers-contrast: high) {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+    }
+
+    /* Reduced Motion Support */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Focus Indicators */
+    *:focus {
+      outline: 2px solid #17a2b8 !important;
+      outline-offset: 2px !important;
+    }
+  </style>
+</body>
+
+</html>

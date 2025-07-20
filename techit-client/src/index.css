@@ -1,0 +1,152 @@
+/* index.css - ייבוא קבצי CSS ראשיים */
+
+/* Bootstrap */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* Font Awesome */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css";
+
+/* Custom CSS Files */
+@import "./styles/layout.css";
+@import "./styles/components.css";
+@import "./styles/forms.css";
+
+/* RTL Support for Hebrew */
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Base Styles Override */
+.container,
+.container-fluid {
+  direction: rtl;
+}
+
+/* Bootstrap RTL Fixes */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.text-left {
+  text-align: right !important;
+}
+
+.text-right {
+  text-align: left !important;
+}
+
+.mr-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+.ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+/* Form RTL Fixes */
+.form-control,
+.form-select {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Table RTL Fixes */
+.table {
+  direction: rtl;
+}
+
+.table th,
+.table td {
+  text-align: right;
+}
+
+/* Modal RTL Fixes */
+.modal-content {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Card RTL Fixes */
+.card {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Button Group RTL Fixes */
+.btn-group {
+  direction: rtl;
+}
+
+/* Breadcrumb RTL Fixes */
+.breadcrumb {
+  direction: rtl;
+}
+
+/* Progress Bar RTL Fixes */
+.progress {
+  direction: ltr;
+}
+
+/* Toast RTL Fixes */
+.toast {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Accessibility Improvements */
+*:focus {
+  outline: 2px solid #17a2b8;
+  outline-offset: 2px;
+}
+
+button:focus,
+.btn:focus {
+  outline: 2px solid #17a2b8;
+  outline-offset: 2px;
+}
+
+/* Smooth Transitions */
+* {
+  transition: none;
+}
+
+a,
+button,
+.btn,
+.card,
+.form-control,
+.form-select {
+  transition: all 0.3s ease;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .btn {
+    border: 1px solid #000 !important;
+    background: transparent !important;
+    color: #000 !important;
+  }
+}
