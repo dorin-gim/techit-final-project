@@ -91,7 +91,7 @@ Edge 90+
 
 ### Installation and Setup
 1. Clone the Project
-bashgit clone https://github.com/dorin-gim/techit
+bashgit clone https://github.com/dorin-gim/techit-final-project
 cd techit
 
 2. Install Dependencies - Backend
